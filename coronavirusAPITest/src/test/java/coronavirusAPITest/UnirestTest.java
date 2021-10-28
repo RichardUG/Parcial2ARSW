@@ -32,7 +32,7 @@ public class UnirestTest {
 				.header("x-rapidapi-host", "covid-19-coronavirus-statistics.p.rapidapi.com")
 				.header("x-rapidapi-key", "34f05cff54msh30ba6f36c91c183p166499jsn555917ef62b8")
 				.asJson();
-		
+		System.out.println(response);
 		assertNotNull(response.getBody());
 		assertEquals((int)HttpStatus.SC_OK,response.getStatus());
 	}
